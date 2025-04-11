@@ -1,0 +1,41 @@
+algor: aflcs
+alpha: 0.1
+batch_size: 16
+cfg: config/config_aflcs_cifar10.yaml
+cs: 0.005
+data_path: ./data
+dataset: cifar10
+epochs: 5
+gpu: 0
+iid: false
+img_size: 32
+in_channels: 3
+lamda: 0.005
+log_dir: ./logs
+log_interval: 100
+log_path: niid_01_le5_r100_c10_b16/cifar10/aflcs
+loss_name: cross_entropy
+lr: 0.01
+lr_scheduler_hyperparams:
+  gamma: 0.9
+  step_size: 10
+lr_scheduler_name: step_lr
+model_name: resnet18
+momentum: 0.5
+no_cuda: false
+num_classes: 10
+num_clients: 10
+num_rounds: 100
+num_select_clients_per_round: 10
+num_workers: 0
+optimizer_hyperparams:
+  lr: 0.01
+  momentum: 0.5
+  weight_decay: 0.0
+optimizer_name: sgd
+save_interval: 10
+seed: 3407
+sync: false
+test_batch_size: 1000
+verbose: false
+weight_decay: 0.0

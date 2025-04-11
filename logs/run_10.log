@@ -1,0 +1,622 @@
+2025-04-10T18:58:07.944715+0800 INFO {'algor': 'aflcs', 'alpha': 0.1, 'batch_size': 16, 'cfg': 'config/config_aflcs_cifar10.yaml', 'cs': 0.005, 'data_path': './data', 'dataset': 'cifar10', 'epochs': 5, 'gpu': 0, 'iid': False, 'img_size': 32, 'in_channels': 3, 'lamda': 0.005, 'log_dir': './logs', 'log_interval': 100, 'log_path': 'niid_01_le5_r100_c10_b16/cifar10/aflcs', 'loss_name': 'cross_entropy', 'lr': 0.01, 'lr_scheduler_hyperparams': {'gamma': 0.9, 'step_size': 10}, 'lr_scheduler_name': 'step_lr', 'model_name': 'resnet18', 'momentum': 0.5, 'no_cuda': False, 'num_classes': 10, 'num_clients': 10, 'num_rounds': 100, 'num_select_clients_per_round': 10, 'num_workers': 0, 'optimizer_hyperparams': {'lr': 0.01, 'momentum': 0.5, 'weight_decay': 0.0}, 'optimizer_name': 'sgd', 'save_interval': 10, 'seed': 3407, 'sync': False, 'test_batch_size': 1000, 'verbose': False, 'weight_decay': 0.0}
+2025-04-10T18:58:08.279241+0800 INFO initialize weights with kaiming
+2025-04-10T18:58:08.370837+0800 INFO loading cifar10 dataset with iid=False and alpha=0.1 for client 9
+2025-04-10T18:58:09.613613+0800 INFO Rank 10 has one client with id 9
+2025-04-10T18:58:11.076753+0800 INFO Rank 10 received the global model
+2025-04-10T18:58:11.077749+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T18:58:12.490704+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 3.191295
+2025-04-10T18:58:27.604502+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 1.833735
+2025-04-10T18:58:43.011911+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 1.423982
+2025-04-10T18:58:58.316981+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 1.366030
+2025-04-10T18:59:03.749524+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 1.385007
+2025-04-10T18:59:19.247663+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 1.172478
+2025-04-10T18:59:34.073784+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 1.311958
+2025-04-10T18:59:49.740542+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.730998
+2025-04-10T18:59:55.282392+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 1.014380
+2025-04-10T19:00:10.284842+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.836919
+2025-04-10T19:00:25.601213+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.872091
+2025-04-10T19:00:40.890429+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 1.854994
+2025-04-10T19:00:46.204686+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.581218
+2025-04-10T19:01:01.941375+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 1.172980
+2025-04-10T19:01:16.974838+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 1.678605
+2025-04-10T19:01:32.318913+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 1.184583
+2025-04-10T19:01:37.687797+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.748021
+2025-04-10T19:01:53.055141+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.886829
+2025-04-10T19:02:08.653286+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.607525
+2025-04-10T19:02:24.155590+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.938661
+2025-04-10T19:02:30.261547+0800 INFO Rank 10 received the global model
+2025-04-10T19:02:30.262542+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:02:30.609016+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.810755
+2025-04-10T19:02:45.663181+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 1.448566
+2025-04-10T19:03:00.717840+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 1.657015
+2025-04-10T19:03:15.971749+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.746218
+2025-04-10T19:03:21.264582+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.618127
+2025-04-10T19:03:36.462900+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.801576
+2025-04-10T19:03:51.638458+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 1.166465
+2025-04-10T19:04:07.282822+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 1.616346
+2025-04-10T19:04:12.716990+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.734159
+2025-04-10T19:04:27.901580+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.785411
+2025-04-10T19:04:43.008087+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.728248
+2025-04-10T19:04:57.806282+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 1.137135
+2025-04-10T19:05:03.393966+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 1.269348
+2025-04-10T19:05:18.674311+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.856372
+2025-04-10T19:05:33.924756+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.751804
+2025-04-10T19:05:49.063130+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.810207
+2025-04-10T19:05:54.534119+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.486493
+2025-04-10T19:06:09.897931+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.650069
+2025-04-10T19:06:24.603407+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.624407
+2025-04-10T19:06:39.802621+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 1.458027
+2025-04-10T19:06:45.946548+0800 INFO Rank 10 received the global model
+2025-04-10T19:06:45.947544+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:06:46.239259+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 3.178339
+2025-04-10T19:07:01.603305+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 1.648322
+2025-04-10T19:07:16.693190+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 1.085836
+2025-04-10T19:07:31.489502+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.915670
+2025-04-10T19:07:37.020080+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 1.010602
+2025-04-10T19:07:52.364662+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.808770
+2025-04-10T19:08:07.839040+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 1.072660
+2025-04-10T19:08:23.460847+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.892049
+2025-04-10T19:08:28.919736+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.645938
+2025-04-10T19:08:44.337094+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 1.726821
+2025-04-10T19:08:59.540390+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.802839
+2025-04-10T19:09:14.633784+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.834433
+2025-04-10T19:09:20.003059+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.512173
+2025-04-10T19:09:35.010889+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.698059
+2025-04-10T19:09:50.437930+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.504292
+2025-04-10T19:10:05.577811+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.869079
+2025-04-10T19:10:11.099239+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 1.064511
+2025-04-10T19:10:26.529865+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.603615
+2025-04-10T19:10:41.682906+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.577560
+2025-04-10T19:10:56.142357+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 1.201767
+2025-04-10T19:11:02.085076+0800 INFO Rank 10 received the global model
+2025-04-10T19:11:02.086072+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:11:02.390731+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 3.262670
+2025-04-10T19:11:18.028195+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.896165
+2025-04-10T19:11:33.791365+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 1.276324
+2025-04-10T19:11:48.484037+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 1.167738
+2025-04-10T19:11:54.090633+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.880827
+2025-04-10T19:12:09.506191+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.937980
+2025-04-10T19:12:25.105478+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 1.006482
+2025-04-10T19:12:40.544325+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 1.024792
+2025-04-10T19:12:46.074434+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.755239
+2025-04-10T19:13:01.736986+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.619311
+2025-04-10T19:13:17.257520+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.603437
+2025-04-10T19:13:32.682373+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.773291
+2025-04-10T19:13:38.345031+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.842648
+2025-04-10T19:13:53.562368+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 1.041158
+2025-04-10T19:14:08.713580+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.982504
+2025-04-10T19:14:23.958136+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.881624
+2025-04-10T19:14:29.476658+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 1.062372
+2025-04-10T19:14:44.580665+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.707898
+2025-04-10T19:14:59.892756+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.717607
+2025-04-10T19:15:15.231125+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.829436
+2025-04-10T19:15:21.055570+0800 INFO Rank 10 received the global model
+2025-04-10T19:15:21.056565+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:15:21.421986+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 3.350650
+2025-04-10T19:15:36.950729+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.567381
+2025-04-10T19:15:52.346827+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.895054
+2025-04-10T19:16:07.683190+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.865636
+2025-04-10T19:16:13.325115+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.907815
+2025-04-10T19:16:28.788042+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 1.258570
+2025-04-10T19:16:44.054605+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.967255
+2025-04-10T19:16:59.967807+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.875091
+2025-04-10T19:17:05.251890+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 1.078314
+2025-04-10T19:17:20.164449+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.900824
+2025-04-10T19:17:35.443887+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.525232
+2025-04-10T19:17:50.604172+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.838140
+2025-04-10T19:17:56.224504+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.752839
+2025-04-10T19:18:11.503766+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.450657
+2025-04-10T19:18:26.994582+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.686443
+2025-04-10T19:18:42.269783+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.537295
+2025-04-10T19:18:47.866120+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.863393
+2025-04-10T19:19:03.367971+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.653825
+2025-04-10T19:19:18.475953+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.838285
+2025-04-10T19:19:34.080897+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 1.064553
+2025-04-10T19:19:40.106175+0800 INFO Rank 10 received the global model
+2025-04-10T19:19:40.107171+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:19:40.437289+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.996757
+2025-04-10T19:19:55.757512+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 1.113043
+2025-04-10T19:20:11.420769+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 1.230452
+2025-04-10T19:20:26.610179+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 1.178767
+2025-04-10T19:20:32.354722+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.874493
+2025-04-10T19:20:47.846492+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.903251
+2025-04-10T19:21:03.511024+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 1.285155
+2025-04-10T19:21:18.949986+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.805500
+2025-04-10T19:21:24.433102+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.667120
+2025-04-10T19:21:39.811568+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.566348
+2025-04-10T19:21:55.503510+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 1.427798
+2025-04-10T19:22:11.111575+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.795580
+2025-04-10T19:22:16.539079+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.637141
+2025-04-10T19:22:31.731296+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.558075
+2025-04-10T19:22:47.203968+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.602753
+2025-04-10T19:23:02.588811+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.674331
+2025-04-10T19:23:08.123442+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.575634
+2025-04-10T19:23:23.791345+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.475208
+2025-04-10T19:23:39.099150+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.573314
+2025-04-10T19:23:54.532956+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.684685
+2025-04-10T19:24:00.938103+0800 INFO Rank 10 received the global model
+2025-04-10T19:24:00.939099+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:24:01.240773+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.585011
+2025-04-10T19:24:16.826543+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 1.221945
+2025-04-10T19:24:31.766921+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.762327
+2025-04-10T19:24:47.453806+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 1.740773
+2025-04-10T19:24:53.155140+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.867443
+2025-04-10T19:25:08.579568+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 1.033467
+2025-04-10T19:25:23.770482+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.968480
+2025-04-10T19:25:39.201565+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.980052
+2025-04-10T19:25:44.727155+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.847000
+2025-04-10T19:25:59.884764+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.529937
+2025-04-10T19:26:15.052684+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 1.301637
+2025-04-10T19:26:30.432850+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.789634
+2025-04-10T19:26:35.930062+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.686951
+2025-04-10T19:26:50.973692+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.529525
+2025-04-10T19:27:06.178412+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.567830
+2025-04-10T19:27:21.143801+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.627758
+2025-04-10T19:27:26.549087+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.736414
+2025-04-10T19:27:41.624942+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.932467
+2025-04-10T19:27:56.584112+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.439167
+2025-04-10T19:28:12.376337+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.579441
+2025-04-10T19:28:18.084702+0800 INFO Rank 10 received the global model
+2025-04-10T19:28:18.084702+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:28:18.372437+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.508264
+2025-04-10T19:28:33.873029+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 2.066622
+2025-04-10T19:28:48.821799+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 1.066620
+2025-04-10T19:29:04.163614+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.584441
+2025-04-10T19:29:09.589186+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.837886
+2025-04-10T19:29:24.883147+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.779073
+2025-04-10T19:29:40.040819+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.927443
+2025-04-10T19:29:55.296134+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.997638
+2025-04-10T19:30:00.787152+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.514095
+2025-04-10T19:30:16.251541+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.596426
+2025-04-10T19:30:31.702241+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.660260
+2025-04-10T19:30:47.056395+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.715673
+2025-04-10T19:30:52.481004+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.463642
+2025-04-10T19:31:08.005006+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.502356
+2025-04-10T19:31:23.316078+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 1.024153
+2025-04-10T19:31:38.674608+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.570229
+2025-04-10T19:31:44.077712+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.619306
+2025-04-10T19:31:58.986275+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.487869
+2025-04-10T19:32:14.012841+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.471609
+2025-04-10T19:32:29.086368+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 1.012423
+2025-04-10T19:32:35.025969+0800 INFO Rank 10 received the global model
+2025-04-10T19:32:35.025969+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:32:35.376400+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 3.033099
+2025-04-10T19:32:50.231916+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.821221
+2025-04-10T19:33:05.281299+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.648935
+2025-04-10T19:33:20.131441+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 1.010231
+2025-04-10T19:33:25.665538+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.996515
+2025-04-10T19:33:40.644245+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.738486
+2025-04-10T19:33:55.708454+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.700524
+2025-04-10T19:34:11.088325+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.618938
+2025-04-10T19:34:16.689201+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.592497
+2025-04-10T19:34:31.499245+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.526059
+2025-04-10T19:34:46.446404+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.707989
+2025-04-10T19:35:01.539618+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.521061
+2025-04-10T19:35:06.802733+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.566253
+2025-04-10T19:35:21.903670+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.393061
+2025-04-10T19:35:37.533124+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.638552
+2025-04-10T19:35:52.697764+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.986797
+2025-04-10T19:35:58.017316+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.463185
+2025-04-10T19:36:12.730280+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.475252
+2025-04-10T19:36:28.073274+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.738094
+2025-04-10T19:36:43.146061+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.416672
+2025-04-10T19:36:49.012882+0800 INFO Rank 10 received the global model
+2025-04-10T19:36:49.013878+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:36:49.329471+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.891745
+2025-04-10T19:37:04.142991+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.552316
+2025-04-10T19:37:18.935517+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 1.457409
+2025-04-10T19:37:33.853219+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.877626
+2025-04-10T19:37:39.200882+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 1.123785
+2025-04-10T19:37:54.352564+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.914393
+2025-04-10T19:38:09.525792+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.793150
+2025-04-10T19:38:24.453947+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.784838
+2025-04-10T19:38:30.117059+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.713045
+2025-04-10T19:38:45.105875+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.426741
+2025-04-10T19:39:00.038891+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.641145
+2025-04-10T19:39:14.791017+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.617229
+2025-04-10T19:39:20.184058+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.550230
+2025-04-10T19:39:35.029020+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.491129
+2025-04-10T19:39:50.111672+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.539853
+2025-04-10T19:40:05.297643+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.606432
+2025-04-10T19:40:10.687608+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.529412
+2025-04-10T19:40:26.130345+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.710461
+2025-04-10T19:40:41.405880+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.456559
+2025-04-10T19:40:56.974395+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.557142
+2025-04-10T19:41:03.053669+0800 INFO Rank 10 received the global model
+2025-04-10T19:41:03.053669+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:41:03.343372+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.597562
+2025-04-10T19:41:18.361437+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.456861
+2025-04-10T19:41:33.442383+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.625562
+2025-04-10T19:41:48.340456+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.536863
+2025-04-10T19:41:53.830375+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.643347
+2025-04-10T19:42:08.984733+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 1.260283
+2025-04-10T19:42:23.917770+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.653862
+2025-04-10T19:42:39.125576+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.877652
+2025-04-10T19:42:44.616550+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.579271
+2025-04-10T19:42:59.555605+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.602528
+2025-04-10T19:43:14.506893+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.534400
+2025-04-10T19:43:29.415534+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 1.301801
+2025-04-10T19:43:34.892978+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.476178
+2025-04-10T19:43:49.595396+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.405087
+2025-04-10T19:44:04.966086+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.467409
+2025-04-10T19:44:20.586268+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.638330
+2025-04-10T19:44:25.967281+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.403529
+2025-04-10T19:44:41.213705+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.515701
+2025-04-10T19:44:56.690958+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.663681
+2025-04-10T19:45:11.522908+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.513223
+2025-04-10T19:45:18.986279+0800 INFO Rank 10 received the global model
+2025-04-10T19:45:18.986279+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:45:19.276980+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 3.291533
+2025-04-10T19:45:34.573657+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.560739
+2025-04-10T19:45:49.983126+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.816194
+2025-04-10T19:46:04.869040+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.768638
+2025-04-10T19:46:10.203712+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.753578
+2025-04-10T19:46:25.314648+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.487468
+2025-04-10T19:46:40.108045+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.969397
+2025-04-10T19:46:55.286742+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.784955
+2025-04-10T19:47:01.024760+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.413674
+2025-04-10T19:47:16.373193+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.428683
+2025-04-10T19:47:31.818066+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.532820
+2025-04-10T19:47:46.851784+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.566333
+2025-04-10T19:47:52.120537+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.683951
+2025-04-10T19:48:07.366412+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.449780
+2025-04-10T19:48:22.584119+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.512771
+2025-04-10T19:48:37.623724+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.654040
+2025-04-10T19:48:43.402530+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.390110
+2025-04-10T19:48:58.836925+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.757338
+2025-04-10T19:49:14.109457+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.430884
+2025-04-10T19:49:29.175324+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.442775
+2025-04-10T19:49:34.729515+0800 INFO Rank 10 received the global model
+2025-04-10T19:49:34.730511+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:49:35.072983+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.684144
+2025-04-10T19:49:49.932136+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.771242
+2025-04-10T19:50:04.600173+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.487746
+2025-04-10T19:50:19.729299+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.686079
+2025-04-10T19:50:25.278250+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.627545
+2025-04-10T19:50:40.449659+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.905154
+2025-04-10T19:50:55.654531+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.608882
+2025-04-10T19:51:11.168169+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.496375
+2025-04-10T19:51:16.594016+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.480853
+2025-04-10T19:51:31.567900+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.487711
+2025-04-10T19:51:46.660596+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.541959
+2025-04-10T19:52:01.674662+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.505812
+2025-04-10T19:52:07.095197+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.360584
+2025-04-10T19:52:22.175525+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.740788
+2025-04-10T19:52:37.437509+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.854235
+2025-04-10T19:52:52.410389+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.768061
+2025-04-10T19:52:57.813029+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.463028
+2025-04-10T19:53:12.895129+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.645828
+2025-04-10T19:53:27.850228+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.376475
+2025-04-10T19:53:42.818049+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.488382
+2025-04-10T19:53:48.967146+0800 INFO Rank 10 received the global model
+2025-04-10T19:53:48.968142+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:53:49.249480+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.630451
+2025-04-10T19:54:04.328011+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.418122
+2025-04-10T19:54:18.908077+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.534059
+2025-04-10T19:54:33.891013+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.793918
+2025-04-10T19:54:39.152246+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.409925
+2025-04-10T19:54:54.522076+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.626295
+2025-04-10T19:55:09.214509+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.476036
+2025-04-10T19:55:24.208452+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.736885
+2025-04-10T19:55:29.402226+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 1.029959
+2025-04-10T19:55:44.554207+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.451320
+2025-04-10T19:56:00.004641+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.436805
+2025-04-10T19:56:15.347324+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.813272
+2025-04-10T19:56:20.706398+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.643816
+2025-04-10T19:56:36.001216+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.503130
+2025-04-10T19:56:50.933831+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.413935
+2025-04-10T19:57:06.001824+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.357658
+2025-04-10T19:57:11.533043+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.494513
+2025-04-10T19:57:26.844869+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.393372
+2025-04-10T19:57:41.904362+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.476600
+2025-04-10T19:57:56.981253+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.457040
+2025-04-10T19:58:02.846554+0800 INFO Rank 10 received the global model
+2025-04-10T19:58:02.846554+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T19:58:03.155178+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 3.420171
+2025-04-10T19:58:17.874852+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.394502
+2025-04-10T19:58:32.903969+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.542852
+2025-04-10T19:58:47.932345+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.766279
+2025-04-10T19:58:53.536500+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.620671
+2025-04-10T19:59:08.537032+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.495047
+2025-04-10T19:59:23.529740+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.868870
+2025-04-10T19:59:38.798732+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.616959
+2025-04-10T19:59:44.238320+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.471302
+2025-04-10T19:59:59.861486+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.526223
+2025-04-10T20:00:14.879995+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.342061
+2025-04-10T20:00:30.205088+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.673210
+2025-04-10T20:00:35.573330+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.443864
+2025-04-10T20:00:51.081859+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.374569
+2025-04-10T20:01:06.210029+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.352152
+2025-04-10T20:01:21.594783+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.655222
+2025-04-10T20:01:26.630646+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.354219
+2025-04-10T20:01:41.486116+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.371035
+2025-04-10T20:01:56.389055+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.411308
+2025-04-10T20:02:11.543948+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.423787
+2025-04-10T20:02:17.565618+0800 INFO Rank 10 received the global model
+2025-04-10T20:02:17.565618+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:02:17.910085+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.664959
+2025-04-10T20:02:32.964308+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.706229
+2025-04-10T20:02:47.859131+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 1.101169
+2025-04-10T20:03:03.037700+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.523669
+2025-04-10T20:03:08.314029+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.577597
+2025-04-10T20:03:23.396204+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.859419
+2025-04-10T20:03:38.510170+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.466912
+2025-04-10T20:03:53.610746+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.460758
+2025-04-10T20:03:59.002997+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.365760
+2025-04-10T20:04:14.434711+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.408915
+2025-04-10T20:04:29.673707+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.800346
+2025-04-10T20:04:44.780931+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.339793
+2025-04-10T20:04:50.152181+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.411079
+2025-04-10T20:05:05.350043+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.345953
+2025-04-10T20:05:20.266682+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.545346
+2025-04-10T20:05:35.318393+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.606323
+2025-04-10T20:05:40.797193+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.386091
+2025-04-10T20:05:56.179961+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.489962
+2025-04-10T20:06:11.401973+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.369286
+2025-04-10T20:06:26.368425+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.434301
+2025-04-10T20:06:34.692179+0800 INFO Rank 10 received the global model
+2025-04-10T20:06:34.692179+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:06:34.999828+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.186583
+2025-04-10T20:06:50.463154+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.674708
+2025-04-10T20:07:05.599807+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.451504
+2025-04-10T20:07:20.498364+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.697434
+2025-04-10T20:07:26.036614+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.477482
+2025-04-10T20:07:40.913973+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.743578
+2025-04-10T20:07:55.929379+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.395102
+2025-04-10T20:08:10.697556+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.530654
+2025-04-10T20:08:16.063414+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.640164
+2025-04-10T20:08:31.404650+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.482987
+2025-04-10T20:08:46.309537+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 1.248466
+2025-04-10T20:09:01.436968+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.434621
+2025-04-10T20:09:07.038798+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.448291
+2025-04-10T20:09:22.361931+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.910857
+2025-04-10T20:09:37.296194+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.445907
+2025-04-10T20:09:52.596280+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.378695
+2025-04-10T20:09:58.021518+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.436604
+2025-04-10T20:10:13.438205+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.795222
+2025-04-10T20:10:28.642785+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.399171
+2025-04-10T20:10:43.879021+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.378135
+2025-04-10T20:10:49.954477+0800 INFO Rank 10 received the global model
+2025-04-10T20:10:49.955473+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:10:50.245189+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.425114
+2025-04-10T20:11:05.363407+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.500672
+2025-04-10T20:11:20.235442+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.833838
+2025-04-10T20:11:35.471666+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.546375
+2025-04-10T20:11:40.837093+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.609119
+2025-04-10T20:11:55.529555+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.695889
+2025-04-10T20:12:10.693752+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.550807
+2025-04-10T20:12:26.007306+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.393623
+2025-04-10T20:12:31.492002+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.505794
+2025-04-10T20:12:46.443165+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.373501
+2025-04-10T20:13:01.651514+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.645119
+2025-04-10T20:13:16.125998+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.352911
+2025-04-10T20:13:21.311911+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.329385
+2025-04-10T20:13:35.496513+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.367135
+2025-04-10T20:13:50.900112+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.346444
+2025-04-10T20:14:06.025863+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.540362
+2025-04-10T20:14:11.381969+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.379777
+2025-04-10T20:14:26.910923+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.524009
+2025-04-10T20:14:42.095421+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.366645
+2025-04-10T20:14:56.784023+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.493663
+2025-04-10T20:15:02.895078+0800 INFO Rank 10 received the global model
+2025-04-10T20:15:02.896073+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:15:03.185785+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.580976
+2025-04-10T20:15:17.840942+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.569193
+2025-04-10T20:15:33.086386+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.596683
+2025-04-10T20:15:47.734105+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.938511
+2025-04-10T20:15:53.146916+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.618439
+2025-04-10T20:16:08.442317+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.629433
+2025-04-10T20:16:23.324321+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.479950
+2025-04-10T20:16:38.170251+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.505116
+2025-04-10T20:16:43.962949+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.630269
+2025-04-10T20:16:59.112866+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.409386
+2025-04-10T20:17:13.594736+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.414208
+2025-04-10T20:17:29.009632+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.491013
+2025-04-10T20:17:34.353030+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.363482
+2025-04-10T20:17:49.653955+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.357796
+2025-04-10T20:18:04.624823+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.497833
+2025-04-10T20:18:19.825726+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.391968
+2025-04-10T20:18:25.241002+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.411000
+2025-04-10T20:18:40.537406+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.348525
+2025-04-10T20:18:55.954418+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.463176
+2025-04-10T20:19:11.016092+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.370901
+2025-04-10T20:19:16.881430+0800 INFO Rank 10 received the global model
+2025-04-10T20:19:16.882426+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:19:17.179108+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.807030
+2025-04-10T20:19:32.487796+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.384744
+2025-04-10T20:19:47.447763+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.667135
+2025-04-10T20:20:02.243985+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.621186
+2025-04-10T20:20:07.767777+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.592181
+2025-04-10T20:20:23.285387+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.343799
+2025-04-10T20:20:38.227000+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.464003
+2025-04-10T20:20:53.522396+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.480743
+2025-04-10T20:20:58.990283+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.408865
+2025-04-10T20:21:14.045571+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.387514
+2025-04-10T20:21:29.169254+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.322489
+2025-04-10T20:21:44.212008+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.523517
+2025-04-10T20:21:49.404990+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.368785
+2025-04-10T20:22:04.899510+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.349054
+2025-04-10T20:22:19.968296+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.383134
+2025-04-10T20:22:35.178262+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.514313
+2025-04-10T20:22:40.336672+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.349468
+2025-04-10T20:22:55.654507+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.339947
+2025-04-10T20:23:11.085068+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.389292
+2025-04-10T20:23:26.371948+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.354221
+2025-04-10T20:23:32.122400+0800 INFO Rank 10 received the global model
+2025-04-10T20:23:32.122400+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:23:32.440987+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 1.282786
+2025-04-10T20:23:47.702430+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.311234
+2025-04-10T20:24:03.079923+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.612336
+2025-04-10T20:24:18.381027+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.446586
+2025-04-10T20:24:23.686411+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.433096
+2025-04-10T20:24:38.860840+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.444153
+2025-04-10T20:24:54.388435+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.625999
+2025-04-10T20:25:09.460667+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.482004
+2025-04-10T20:25:14.956699+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.346948
+2025-04-10T20:25:30.084066+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.335606
+2025-04-10T20:25:45.538109+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.570307
+2025-04-10T20:26:00.783232+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.517301
+2025-04-10T20:26:06.271289+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.337303
+2025-04-10T20:26:21.664285+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.456027
+2025-04-10T20:26:36.856994+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.547157
+2025-04-10T20:26:52.288096+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.406201
+2025-04-10T20:26:57.865116+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.415367
+2025-04-10T20:27:13.314856+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.340115
+2025-04-10T20:27:28.299644+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.376643
+2025-04-10T20:27:43.425043+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.339522
+2025-04-10T20:27:51.472242+0800 INFO Rank 10 received the global model
+2025-04-10T20:27:51.472242+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:27:51.771913+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.397271
+2025-04-10T20:28:06.544925+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 1.007113
+2025-04-10T20:28:21.548956+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.787871
+2025-04-10T20:28:36.913579+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.725337
+2025-04-10T20:28:42.064208+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.427875
+2025-04-10T20:28:57.146548+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.366066
+2025-04-10T20:29:12.336133+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.435224
+2025-04-10T20:29:27.549581+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.431852
+2025-04-10T20:29:32.977455+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.345040
+2025-04-10T20:29:47.776440+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.910478
+2025-04-10T20:30:02.755522+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.356245
+2025-04-10T20:30:17.552859+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.335162
+2025-04-10T20:30:22.903547+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.361432
+2025-04-10T20:30:38.198666+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.355751
+2025-04-10T20:30:53.406394+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.433921
+2025-04-10T20:31:08.716780+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.430360
+2025-04-10T20:31:13.978301+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.337084
+2025-04-10T20:31:28.996622+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.401476
+2025-04-10T20:31:44.136676+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.456591
+2025-04-10T20:31:58.937656+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.380895
+2025-04-10T20:32:04.907961+0800 INFO Rank 10 received the global model
+2025-04-10T20:32:04.907961+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:32:05.286287+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.195116
+2025-04-10T20:32:20.438426+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.428953
+2025-04-10T20:32:35.545688+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.492411
+2025-04-10T20:32:50.772396+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.987388
+2025-04-10T20:32:56.319082+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.742858
+2025-04-10T20:33:11.581173+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.367184
+2025-04-10T20:33:27.021681+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.403917
+2025-04-10T20:33:41.981607+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.537248
+2025-04-10T20:33:47.270415+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.379458
+2025-04-10T20:34:02.234939+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.391083
+2025-04-10T20:34:17.403429+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.333874
+2025-04-10T20:34:32.684429+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.356531
+2025-04-10T20:34:38.200595+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.346517
+2025-04-10T20:34:53.306236+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.331947
+2025-04-10T20:35:08.108721+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.367761
+2025-04-10T20:35:23.030416+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.372596
+2025-04-10T20:35:28.512226+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.379530
+2025-04-10T20:35:43.422042+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.393418
+2025-04-10T20:35:58.899725+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.344906
+2025-04-10T20:36:14.275205+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.361631
+2025-04-10T20:36:20.526848+0800 INFO Rank 10 received the global model
+2025-04-10T20:36:20.526848+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:36:20.816567+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.175987
+2025-04-10T20:36:36.564022+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.897618
+2025-04-10T20:36:51.592138+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.459078
+2025-04-10T20:37:06.445942+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.462971
+2025-04-10T20:37:11.951398+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.328449
+2025-04-10T20:37:27.187276+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.435546
+2025-04-10T20:37:41.938748+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.388475
+2025-04-10T20:37:56.782614+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.644435
+2025-04-10T20:38:02.188651+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.339866
+2025-04-10T20:38:17.517992+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.341787
+2025-04-10T20:38:32.500720+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.398168
+2025-04-10T20:38:47.692441+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.583829
+2025-04-10T20:38:53.045316+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.416106
+2025-04-10T20:39:08.247624+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.378206
+2025-04-10T20:39:23.411428+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.344905
+2025-04-10T20:39:38.148264+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.332216
+2025-04-10T20:39:43.537390+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.361916
+2025-04-10T20:39:58.566478+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.336424
+2025-04-10T20:40:13.846659+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.329700
+2025-04-10T20:40:29.327173+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.335275
+2025-04-10T20:40:35.141907+0800 INFO Rank 10 received the global model
+2025-04-10T20:40:35.141907+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:40:35.516286+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 1.903878
+2025-04-10T20:40:50.529974+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.653261
+2025-04-10T20:41:05.785173+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.514456
+2025-04-10T20:41:20.883477+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.632084
+2025-04-10T20:41:26.310421+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.501749
+2025-04-10T20:41:41.669821+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.334668
+2025-04-10T20:41:56.878508+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.539797
+2025-04-10T20:42:12.076959+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.788920
+2025-04-10T20:42:17.763820+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.375598
+2025-04-10T20:42:32.517136+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.324558
+2025-04-10T20:42:47.512902+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.658841
+2025-04-10T20:43:02.564024+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.330929
+2025-04-10T20:43:08.000172+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.451450
+2025-04-10T20:43:22.957886+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.383046
+2025-04-10T20:43:37.774983+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.428500
+2025-04-10T20:43:52.753319+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.352249
+2025-04-10T20:43:58.287873+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.321690
+2025-04-10T20:44:13.370230+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.346157
+2025-04-10T20:44:28.912118+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.441915
+2025-04-10T20:44:44.362042+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.670483
+2025-04-10T20:44:50.399193+0800 INFO Rank 10 received the global model
+2025-04-10T20:44:50.400189+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:44:50.726747+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.849835
+2025-04-10T20:45:05.653866+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.526297
+2025-04-10T20:45:20.752211+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.825720
+2025-04-10T20:45:35.661881+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.502914
+2025-04-10T20:45:41.309231+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.414840
+2025-04-10T20:45:56.334172+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.411070
+2025-04-10T20:46:11.694117+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.346186
+2025-04-10T20:46:26.821125+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.396914
+2025-04-10T20:46:32.154859+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.347023
+2025-04-10T20:46:47.341054+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.339989
+2025-04-10T20:47:02.211479+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.323337
+2025-04-10T20:47:17.225618+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.327107
+2025-04-10T20:47:22.769235+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.321613
+2025-04-10T20:47:37.867023+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.379109
+2025-04-10T20:47:53.033068+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.409863
+2025-04-10T20:48:07.649511+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.347741
+2025-04-10T20:48:13.065878+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.336905
+2025-04-10T20:48:28.375993+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.331438
+2025-04-10T20:48:43.390318+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.359877
+2025-04-10T20:48:58.679794+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.382624
+2025-04-10T20:49:04.562817+0800 INFO Rank 10 received the global model
+2025-04-10T20:49:04.562817+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:49:04.893356+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.080937
+2025-04-10T20:49:20.025088+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.360468
+2025-04-10T20:49:35.267525+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.752342
+2025-04-10T20:49:50.477352+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.755207
+2025-04-10T20:49:55.977423+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.415448
+2025-04-10T20:50:11.621086+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.814625
+2025-04-10T20:50:26.819655+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.337735
+2025-04-10T20:50:41.528554+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.378916
+2025-04-10T20:50:46.933208+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.338904
+2025-04-10T20:51:02.090527+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.572128
+2025-04-10T20:51:17.338475+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.331625
+2025-04-10T20:51:32.393186+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.456767
+2025-04-10T20:51:38.072093+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.324484
+2025-04-10T20:51:53.232845+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.367690
+2025-04-10T20:52:08.183321+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.355512
+2025-04-10T20:52:23.098917+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.336860
+2025-04-10T20:52:28.740186+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.330105
+2025-04-10T20:52:43.918675+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.327044
+2025-04-10T20:52:59.390574+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.353359
+2025-04-10T20:53:14.582715+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.439130
+2025-04-10T20:53:20.186302+0800 INFO Rank 10 received the global model
+2025-04-10T20:53:20.186302+0800 INFO Client 9 | Rank: 10 | Update model
+2025-04-10T20:53:20.534761+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 0/336 | Loss: 2.644259
+2025-04-10T20:53:35.641210+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 100/336 | Loss: 0.301774
+2025-04-10T20:53:51.397405+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 200/336 | Loss: 0.357849
+2025-04-10T20:54:06.415402+0800 INFO Client 9 | Rank: 10 | Epoch: 0/5 | Batch: 300/336 | Loss: 0.591021
+2025-04-10T20:54:11.886572+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 0/336 | Loss: 0.325686
+2025-04-10T20:54:26.787801+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 100/336 | Loss: 0.311953
+2025-04-10T20:54:42.082836+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 200/336 | Loss: 0.546220
+2025-04-10T20:54:57.301585+0800 INFO Client 9 | Rank: 10 | Epoch: 1/5 | Batch: 300/336 | Loss: 0.397205
+2025-04-10T20:55:02.872721+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 0/336 | Loss: 0.941833
+2025-04-10T20:55:18.140784+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 100/336 | Loss: 0.343149
+2025-04-10T20:55:33.569267+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 200/336 | Loss: 0.582785
+2025-04-10T20:55:48.767066+0800 INFO Client 9 | Rank: 10 | Epoch: 2/5 | Batch: 300/336 | Loss: 0.325776
+2025-04-10T20:55:54.430152+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 0/336 | Loss: 0.365986
+2025-04-10T20:56:09.464579+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 100/336 | Loss: 0.334784
+2025-04-10T20:56:24.568141+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 200/336 | Loss: 0.363074
+2025-04-10T20:56:39.583059+0800 INFO Client 9 | Rank: 10 | Epoch: 3/5 | Batch: 300/336 | Loss: 0.353833
+2025-04-10T20:56:45.224146+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 0/336 | Loss: 0.338692
+2025-04-10T20:57:01.284085+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 100/336 | Loss: 0.325535
+2025-04-10T20:57:16.213653+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 200/336 | Loss: 0.332126
+2025-04-10T20:57:28.388524+0800 INFO Client 9 | Rank: 10 | Epoch: 4/5 | Batch: 300/336 | Loss: 0.328713
+2025-04-10T20:57:32.223400+0800 INFO Rank 10 received the global model
+2025-04-10T20:57:32.225392+0800 INFO Rank 10 is done
